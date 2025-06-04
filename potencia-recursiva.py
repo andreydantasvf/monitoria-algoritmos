@@ -15,6 +15,8 @@ def potencia(base, expoente):
     if expoente == 1:
         return base
     
+    # Caso recursivo: base^expoente = base * base^(expoente - 1)
+    # exemplo: 2^3 = 2 * 2^2 -> 2 * (2 * 2)
     return base * potencia(base, expoente - 1)
 
 
